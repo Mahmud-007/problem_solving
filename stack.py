@@ -14,7 +14,8 @@ def pop_stack(stack):
     if (len(stack)==0):
         print("Empty")
         return
-    stack.pop()
+    item=stack.pop()
+    print(item)
 
 def main():
     demo_stack = create_stack()
@@ -25,6 +26,13 @@ def main():
     push_stack(demo_stack,"lsdkjf")
     push_stack(demo_stack,5)
     push_stack(demo_stack,5)
+    pop_stack(demo_stack)
+    pop_stack(demo_stack)
+    pop_stack(demo_stack)
+    pop_stack(demo_stack)
+    pop_stack(demo_stack)
+    pop_stack(demo_stack)
+    pop_stack(demo_stack)
 
 if __name__ == '__main__':
     main()
