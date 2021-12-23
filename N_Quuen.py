@@ -20,15 +20,14 @@ def solve_N_Queeen(row):
             board[row][i]=1
             if (solve_N_Queeen(row+1)):
                 return True
-        board[row][i]=0
+            board[row][i]=0
     return False
 
-N = 5
-board =[[0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0]]
+N = 4
+board =[[0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],
+        [0, 0, 0, 0],]
 solve_N_Queeen(0)
 for i in range(N):
     for j in range(N):
