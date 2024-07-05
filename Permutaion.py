@@ -10,7 +10,7 @@ def permute(given,l,r):
 def returnString(list):
     return ''.join(list)
 
-string = "ABCD"
+string = "123"
 n = len(string)
 a = list(string)
 permute(a, 0, n)
